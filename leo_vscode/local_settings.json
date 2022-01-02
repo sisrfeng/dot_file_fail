@@ -1,0 +1,426 @@
+{
+"emptyIndent.removeIndent": true,  // Automatically remove indentation in empty lines on save */
+"emptyIndent.highlightColor": "rgba(246,36,89,1)",
+"emptyIndent.exclude": [ ".md" ],
+"emptyIndent.highlightIndent": false,   //改成true会烦死
+"editor.quickSuggestions":true,
+
+// 退出后还能撤销回去
+"files.restoreUndoStack": true,
+
+// flake8是多个工具的集合，据说最强
+"python.linting.enabled": true,
+"python.linting.lintOnSave": true,
+"python.linting.maxNumberOfProblems": 8,
+// 详见 /home/wf/.config/flake8
+// "python.linting.flake8Args": ["--ignore=E303,E402,E401,E202"],
+// "python.linting.banditPath": "bandit",
+
+"files.eol": "\n", // Default end of line character
+
+"macros": {
+    "leo_commentLine": ["editor.action.commentLine", "cursorDown"],
+    "leo_copy_commentLine": [ "editor.action.copyLinesDownAction",
+        "cursorUp",
+        "editor.action.addCommentLine",
+        "cursorDown" ]
+},
+
+// 半天没找到 在哪里改颜色
+// "editor.bracketPairColorization.enabled": true,
+
+"bracket-pair-colorizer-2.colorMode": "Independent",
+"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+"bracket-pair-colorizer-2.colors": [
+    "LightSkyBlue",
+    "Orchid",
+    "rgba(20, 200, 100, 1)",
+],
+
+"editor.suggest.preview": true,
+"editor.suggestSelection": "first",
+"editor.suggest.snippetsPreventQuickSuggestions": false,
+"editor.largeFileOptimizations": true,
+"editor.minimap.enabled": false,
+"files.defaultLanguage": "${activeEditorLanguage}",
+"editor.matchBrackets": "always",
+"editor.scrollBeyondLastLine": false,
+
+"remote.SSH.connectTimeout": 10000,
+"remote.SSH.showLoginTerminal": false,
+"kite.showWelcomeNotificationOnStartup": false,
+// "editor.defaultFormatter": "kiteco.kite",
+
+"docker.images.sortBy": "CreatedTime",
+
+"remote.SSH.remotePlatform": {
+    "R8": "linux",
+    "tv": "linux",
+    "pc": "linux",
+    "集群ssl": "linux",
+    "集群": "linux",
+    "集群cy": "linux"
+},
+"[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"editor.wordWrap": "on",
+"terminal.integrated.copyOnSelection": true,
+"terminal.integrated.enableBell": true,
+"terminal.integrated.fontSize": 16,
+"terminal.integrated.rightClickBehavior": "default",
+"terminal.integrated.scrollback": 5000,
+"terminal.integrated.tabs.enabled": true,
+"terminal.integrated.inheritEnv": true,
+"sftp.printDebugLog": true,
+"sftp.debug": true,
+"zhihu.useWaterMark": false,
+"explorer.confirmDelete": false,
+
+"local-history.saveDelay": 5,
+"local-history.dateLocale": "zh-CN",
+"local-history.exclude": [
+    "**/.history/**",
+    "**/.vscode/**",
+    "**/node_modules/**",
+    "**/typings/**",
+    "**/out/**",
+    "**keybindings.json**",
+    "**setting.json**",
+    "**/Code/User/**"
+],
+
+//tab(制表符)显示为 ->
+"editor.renderControlCharacters": true,
+//空格显示为点：...
+"editor.renderWhitespace":"selection",
+"editor.detectIndentation":true,
+"editor.tabSize": 4, //tab为四个空格,
+"editor.insertSpaces": true,  //转为空格。受上一行影响
+
+"files.trimTrailingWhitespace": false,
+
+"files.exclude": {
+    "**/.**": true
+},
+"local-history.path": "D:\\.local_history_vscode\\.history",
+"jupyter.askForKernelRestart": false,
+"jupyter.disableJupyterAutoStart": true,
+"editor.cursorStyle": "block-outline",
+"editor.lineNumbers": "on",
+"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",  //`为了
+
+"notebook.cellToolbarLocation": { "default": "right", "jupyter-notebook": "left" },
+// 之前这里设成自动保存，配合保存时自动删除多余空格，导致写代码时经常误删空格
+"files.autoSave": "onWindowChange",
+"security.workspace.trust.untrustedFiles": "open",
+"editor.autoClosingBrackets": "beforeWhitespace",
+"editor.autoClosingQuotes": "beforeWhitespace",
+"editor.comments.insertSpace": true,
+"editor.cursorBlinking": "phase",
+"editor.cursorSmoothCaretAnimation": true,
+"editor.definitionLinkOpensInPeek": true,
+"editor.fontWeight": "500",
+"editor.formatOnType": true,
+"diffEditor.codeLens": true,
+"typescript.locale": "zh-CN",
+"local-history.maxDisplay": 500,
+"local-history.treeLocation": "localHistory",
+"task.quickOpen.history": 10,
+"search.quickOpen.history.filterSortOrder": "recency",
+"vscode-neovim.mouseSelectionStartVisualMode": true,
+"vscode-neovim.neovimExecutablePaths.win32": "F:\\Neovim\\bin\\nvim.exe",
+"vscode-neovim.neovimInitVimPaths.win32" : "C:\\Users\\noway\\AppData\\Local\\nvim\\init.vim",
+
+"search.seedWithNearestWord": true,
+"txtsyntax.highlightLineBorderColor": "blue",
+"workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.png": "imagePreview.previewEditor",
+    "*.md": "vscode.markdown.preview.editor"
+},
+"workbench.sideBar.location": "right",
+
+"workbench.colorTheme": "Quiet Light",
+
+// A pre-configured set of syntax tokens ('comments', 'strings', ...) is
+// available for the most common constructs.
+// If you want more, you can do so by directly specifying TextMate theme color rules:
+"editor.tokenColorCustomizations": {
+    "textMateRules":[
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                // "fontStyle": "bold",
+                "foreground": "#725803b7"
+            }
+        },
+    ]
+},
+
+"workbench.colorCustomizations": {
+    "focusBorder": "#A6B39B",
+    "editorWhitespace.foreground": "#AAAAAA",
+    "statusBar.debuggingBackground": "#683411",
+    // "statusBarItem.remoteBackground": "#4e3c69",  //每个remote 独立设置
+
+    //four-digit RGB notation (#RGBA) is a shorter version of the eight-digit form (#RRGGBBAA).
+    "editor.background": "#FDF6E3",
+    "terminal.background": "#FDF6E3",
+    "sideBar.background": "#f3ecd4",            //修改文件目录栏颜色
+    "activityBar.background": "#eee8d5",        //修改最左侧工具边栏颜色
+    "statusBar.foreground": "#ffffff",
+    "statusBar.background": "#705697",
+    "statusBar.noFolderBackground": "#705697",
+    // 暂时无法只高亮具体更改的字符，等更新:  https://github.com/microsoft/vscode/issues/103207
+    "diffEditor.removedTextBackground": "#ffbe0a0a",
+    "diffEditor.insertedTextBackground": "#03fb4d26",
+    "diffEditor.diagonalFill": "#3d38282a",       //用于对齐
+
+    "editorWidget.background": "#eee6ca",
+    "editorCursor.foreground": "#05d9ff4b",
+    // "editorWhitespace.foreground": "#586E7580",
+
+    "editor.lineHighlightBackground": "#EEE8D599",
+    "editor.selectionBackground": "#bbb9",
+
+    "minimap.selectionHighlight": "#EEE8D5",
+    "editorIndentGuide.background": "#586E7580",
+    "editorIndentGuide.activeBackground": "#081E2580",
+    "editorLineNumber.activeForeground": "#e342ff",
+    "peekViewResult.background": "#EEE8D5",
+    "peekViewEditor.background": "#FFFBF2",
+
+    "terminal.foreground": "#000000",
+    "terminalCursor.background":"#037432",
+    "terminalCursor.foreground":"#05c5ff3b",
+    "terminal.selectionBackground": "#00000040",
+    "terminal.border": "#80808059", // 35% opacity
+
+    "terminal.ansiBlack": "#073642",
+    "terminal.ansiRed": "#dc322f",
+    "terminal.ansiGreen": "#419013",
+    "terminal.ansiYellow": "#b58900",
+    "terminal.ansiBlue": "#268bd2",
+    "terminal.ansiMagenta": "#d33682",
+    "terminal.ansiCyan": "#2aa198",
+    "terminal.ansiWhite": "#eee8d5",
+    "terminal.ansiBrightBlack": "#012936d8",
+    "terminal.ansiBrightGreen": "#44ac36bb",
+    "terminal.ansiBrightYellow": "#dbb538",
+    "terminal.ansiBrightBlue": "#2483af",
+    "terminal.ansiBrightWhite": "#8f8faf",
+    // "terminal.ansiBrightMagenta": "#6c71c4",
+    // "terminal.ansiBrightCyan": "#93a1a1",
+    // "terminal.ansiBrightRed": "#cb4b16",
+
+    "walkThrough.embeddedEditorBackground": "#00000014",
+
+    "pickerGroup.foreground": "#A6B39B",
+    "pickerGroup.border": "#749351",
+    "list.activeSelectionForeground": "#6c6c6c",
+    "quickInputList.focusBackground": "#CADEB9",
+    "list.hoverBackground": "#e0e0e0",
+    "list.activeSelectionBackground": "#c4d9b1",
+    "list.inactiveSelectionBackground": "#d3dbcd",
+    "list.highlightForeground": "#9769dc",
+    "selection.background": "#C9D0D9",
+    "panel.background": "#F5F5F5",
+    "editorLineNumber.foreground": "#6D705B",
+    "inputOption.activeBorder": "#adafb7",
+    "dropdown.background": "#F5F5F5",
+    "editor.findMatchBackground": "#BF9CAC",
+    "editor.findMatchHighlightBackground": "#edc9d8",
+    "peekViewEditor.matchHighlightBackground": "#C2DFE3",
+    "peekViewTitle.background": "#F2F8FC",
+    "peekView.border": "#705697",
+    "peekViewResult.matchHighlightBackground": "#93C6D6",
+    "tab.lastPinnedBorder": "#c9d0d9",
+    "welcomePage.tileBackground": "#f0f0f7",
+    // "statusBarItem.remoteBackground": "#8fad7d",  左下角 远程连接 那符号的颜色。别设
+    "ports.iconRunningProcessForeground": "#749351",
+    "activityBar.foreground": "#705697",
+    "activityBarBadge.background": "#705697",
+    "titleBar.activeBackground": "#c4b7d7",
+    "button.background": "#705697",
+    "editorGroup.dropBackground": "#C9D0D988",
+    "inputValidation.infoBorder": "#4ec1e5",
+    "inputValidation.infoBackground": "#f2fcff",
+    "inputValidation.warningBackground": "#fffee2",
+    "inputValidation.warningBorder": "#ffe055",
+    "inputValidation.errorBackground": "#ffeaea",
+    "inputValidation.errorBorder": "#f1897f",
+    "errorForeground": "#f1897f",
+    "badge.background": "#705697AA",
+    "progressBar.background": "#705697",
+},
+
+"security.workspace.trust.enabled": false,
+"workbench.startupEditor": "none",
+"shellcheck.exclude": [
+    "[\"2148\"]"
+],
+"gitlens.hovers.currentLine.over": "line",
+"gitlens.currentLine.enabled": false,
+"gitlens.statusBar.format": "${author}, ${agoOrDate}",
+"python.autoComplete.addBrackets": true,
+"python.languageServer": "Jedi",
+"python.pythonPath": "F:\\python3\\python.exe",
+"python.analysis.completeFunctionParens": true,
+// "workbench.iconTheme": "simple-icons",
+"debug.terminal.clearBeforeReusing": true,
+"terminal.integrated.defaultProfile.linux": "zsh",
+// "terminal.integrated.localEchoStyle": "inverted",
+"terminal.integrated.titleMode": "sequence",
+"terminal.integrated.tabs.showActiveTerminal": "always",
+"terminal.integrated.tabs.location": "left",
+"terminal.integrated.tabs.hideCondition": "singleGroup",
+"terminal.integrated.showExitAlert": false,
+"terminal.integrated.profiles.linux": {
+    "zsh": {
+        "path": "zsh"
+    },
+    "tmux": {
+        "path": "tmux",
+        "icon": "terminal-tmux"
+    },
+},
+// 终端名字不显示里面的内容
+"terminal.integrated.localEchoExcludePrograms": [
+    "tmux"
+],
+
+// "python.defaultInterpreterPath": "/home/wf/anaconda3/envs/py38_torch_19/bin/python",
+"window.menuBarVisibility": "toggle",
+
+
+//浅色的都是暂时不用的插件的，不用管
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"sync.gist": "23360b9ed1e6ec0b1e7c153cd62228aa",
+
+"gitlens.views.repositories.location": "gitlens",
+"gitlens.views.fileHistory.location": "gitlens",
+"gitlens.views.lineHistory.location": "gitlens",
+"gitlens.views.compare.location": "gitlens",
+"gitlens.views.search.location": "gitlens",
+
+"latex-workshop.view.pdf.viewer": "tab",
+"python.defaultInterpreterPath": "/home/wf/anaconda3/envs/py38_torch_18/bin/python",
+"workbench.editor.enablePreview": false,
+"local-history.absolute": true,
+"local-history.daysLimit": 365,
+"workbench.iconTheme": "simple-icons",
+
+
+//[[----------------------------------to do highlight -------------------------------
+// https://github.com/jgclark/vscode-todo-highlight
+
+"todohighlight.isEnable": true,
+"todohighlight.isCaseSensitive": true,
+
+/* 不再需要了,
+// https://stackoverflow.com/questions/11592033/regex-match-text-between-tags
+// 正则神器 https://regexr.com/
+// 这货表示一个反斜杠\\
+// "todohighlight.keywordsPattern": "\\(([^)]+)\\)", // 高亮content between parentheses
+不再需要了,
+ */
+
+"todohighlight.defaultStyle": {
+    "color": "green",
+    "backgroundColor": "rgba(0,100,100,.1)",
+    "isWholeLine": false,
+    "border": "1px solid #eee",
+    "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+    "overviewRulerColor": "#ffab00",
+    // "cursor": "pointer",
+    //other styling properties...
+
+},
+"todohighlight.keywords": [
+
+    // 啥都不指定，就用defaultStyle:
+    "debug:",
+
+    {
+        "text": "# todo",
+        "color": "black",
+        "border": "2px solid yellow",
+        "borderRadius": "2px",
+        "backgroundColor": "rgba(0,0,0,.08)",
+        //other styling properties goes here ...
+    },
+    {
+        "text": "; todo",
+        "color": "black",
+        "border": "2px solid yellow",
+        "borderRadius": "2px",
+        "backgroundColor": "rgba(0,0,0,.08)",
+        //other styling properties goes here ...
+    },
+    {
+        "text": "// todo",
+        "color": "black",
+        "border": "2px solid yellow",
+        "borderRadius": "2px",
+        "backgroundColor": "rgba(0,0,0,.08)",
+        //other styling properties goes here ...
+    },
+    {
+        "text": "===",
+        "border": "1px solid white",
+    },
+    {
+        "text": "反引号",  //这个text其实不生效，当是给这个设置起个名字
+        "regex": { "pattern": "`[^\n`]+`" },   // 高亮两个反引号中间的内容（中间不能含反引号或换行）
+        "color": "black",
+        "border": "1px solid blue",
+        "borderRadius": "2px",
+        "backgroundColor": "rgba(0,100,100,.08)",
+    }
+],
+
+"todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+],
+"todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**"
+],
+"todohighlight.maxFilesForSearch": 5120,
+"todohighlight.toggleURI": false,
+"window.zoomLevel": 1,
+"terminal.external.windowsExec": "C:\\Program Files\\Alacritty\\alacritty.exe",
+"terminal.integrated.allowChords": false,
+"terminal.integrated.drawBoldTextInBrightColors": true,
+"redhat.telemetry.enabled": false,
+"terminal.explorerKind": "external",
+"workbench.activityBar.visible": false,
+
+
+// ----------------------------------to do highlight -------------------------------]]
+
+
+// end of the out most 括号
+}
+
+

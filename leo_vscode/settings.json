@@ -1,0 +1,53 @@
+{
+    "local-history.absolute": true,
+    "local-history.dateLocale": "zh-CN",
+    "local-history.daysLimit": 365,
+    "local-history.maxDisplay": 500,
+    "local-history.path": "~/d/.local_history_vscode",
+    "local-history.exclude": [
+        "**/.history/**",
+        "**/.vscode/**",
+        "**/node_modules/**",
+        "**/typings/**",
+        "**/out/**",
+        "**keybindings.json**",
+        "**setting.json**",
+        "**/Code/User/**"
+    ],
+    "local-history.saveDelay": 5,
+
+    "workbench.colorCustomizations": {
+        //four-digit RGB notation (#RGBA) is a shorter version of the eight-digit form (#RRGGBBAA).
+        // 只写6位时，应该就是不搞透明度
+        // "statusBar.background": "#2e312d",
+        "statusBar.background": "#8fad7d",
+        "statusBarItem.remoteBackground": "#7fad7d",
+        "statusBarItem.remoteForeground": "#d3ddcc",
+        "statusBar.foreground": "#ffffffff",
+        "statusBar.noFolderBackground": "#8fad7dff",
+        "titleBar.activeBackground": "#8fad7d",
+        "sideBarSectionHeader.background": "#d1e9b1",
+        "button.background": "#d1e9b1",
+        "button.foreground": "#000000",
+
+    },
+
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.defaultLocation": "view",
+    "terminal.integrated.enableBell":true,
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "zsh"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+    },
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+}
